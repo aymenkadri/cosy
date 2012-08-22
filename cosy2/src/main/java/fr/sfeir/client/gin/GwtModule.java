@@ -17,13 +17,21 @@ import com.google.inject.Inject;
 import com.google.inject.Provides;
 import com.google.inject.Singleton;
 
+import fr.sfeir.client.activity.EspaceClientActivity;
 import fr.sfeir.client.activity.HomePageActivity;
+import fr.sfeir.client.activity.SituationEncoursActivity;
+import fr.sfeir.client.activity.EspaceClientActivity.IEspaceClientView;
 import fr.sfeir.client.activity.HomePageActivity.IHomePageView;
 import fr.sfeir.client.activity.NavBarActivity;
 import fr.sfeir.client.activity.NavBarActivity.INavBarView;
+import fr.sfeir.client.activity.SituationEncoursActivity.ISituationEncoursView;
 import fr.sfeir.client.layout.MainLayoutView;
 import fr.sfeir.client.layout.NavBarView;
+import fr.sfeir.client.place.EspaceClientPlace;
 import fr.sfeir.client.place.HomePagePlace;
+import fr.sfeir.client.place.SituationEncoursPlace;
+import fr.sfeir.client.ui.client.EspaceClientView;
+import fr.sfeir.client.ui.enCours.SituationEncoursView;
 import fr.sfeir.client.ui.home.HomePageView;
 
 @SuppressWarnings("deprecation")
@@ -32,7 +40,7 @@ public class GwtModule extends AbstractGinModule {
 	/**
 	 * Identify all places in the application
 	 */
-	@WithTokenizers({ HomePagePlace.Tokenizer.class })
+	@WithTokenizers({ HomePagePlace.Tokenizer.class, EspaceClientPlace.Tokenizer.class, SituationEncoursPlace.Tokenizer.class })
 	public static interface AppHistoryMapper extends PlaceHistoryMapper {
 	}
 
@@ -49,19 +57,28 @@ public class GwtModule extends AbstractGinModule {
 		bind(INavBarView.class).to(NavBarView.class).in(Singleton.class);
 		bind(IHomePageView.class).to(HomePageView.class).in(Singleton.class);
 		
+		bind(IEspaceClientView.class).to(EspaceClientView.class).in(Singleton.class);
+		bind(ISituationEncoursView.class).to(SituationEncoursView.class).in(Singleton.class);
+		
 		// bind Activity
 		bind(HomePageActivity.class);
 		bind(NavBarActivity.class);
+		bind(EspaceClientActivity.class);
+		bind(SituationEncoursActivity.class);
 	}
 
 	// bind ActivityMapper
 	@Provides
 	@Singleton
-	ActivityMapper provideActivityMapper(final HomePageActivity homePageActivity) {
+	ActivityMapper provideActivityMapper(final HomePageActivity homePageActivity,
+			final EspaceClientActivity espaceClientActivity, 
+			final SituationEncoursActivity situationEncoursActivity) {
 
 		return new ActivityMapper() {
 			private ImmutableMap<Class<? extends Place>, Activity> map = new ImmutableMap.Builder<Class<? extends Place>, Activity>()
 			.put(HomePagePlace.class, homePageActivity)
+			.put(EspaceClientPlace.class, espaceClientActivity)
+			.put(SituationEncoursPlace.class, situationEncoursActivity)
 			.build();
 
 			@Override

@@ -6,7 +6,7 @@
 	
 	</ui:style>
 	<g:HTMLPanel>
-		<g:SimplePanel ui:field="navBar"></g:SimplePanel>
+				<g:SimplePanel ui:field="navBar"></g:SimplePanel>
 		<div class="container-fluid">
 			<div class="row-fluid">
 				<div class="span12">

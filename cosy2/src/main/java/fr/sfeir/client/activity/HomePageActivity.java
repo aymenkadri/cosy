@@ -11,7 +11,7 @@ import com.google.gwt.user.client.ui.PasswordTextBox;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.inject.Inject;
 
-import fr.sfeir.client.layout.MainLayoutView;
+import fr.sfeir.client.place.EspaceClientPlace;
 
 public class HomePageActivity extends AbstractActivity {
 
@@ -53,8 +53,7 @@ public class HomePageActivity extends AbstractActivity {
 	 * @param event
 	 */
 	public void connect(ClickEvent event) {
-		//this.placeController.goTo(new RechercheElevePlace());
-		Window.alert("Connnection established ");
+		placeController.goTo(new EspaceClientPlace());
 	}
 	
 	/**

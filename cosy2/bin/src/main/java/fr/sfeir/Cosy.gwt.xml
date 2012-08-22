@@ -1,0 +1,37 @@
+<!DOCTYPE module SYSTEM "http://google-web-toolkit.googlecode.com/svn/releases/2.0/distro-source/core/src/gwt-module.dtd">
+<module rename-to='Cosy'>
+ 
+ <!--  <inherits name="com.google.common.collect.Collect" /> -->
+
+	<inherits name='com.google.gwt.user.User' />
+	<inherits name='com.sencha.gxt.ui.GXT' />
+	<inherits name="com.google.common.collect.Collect" />
+	<inherits name="com.google.gwt.inject.Inject" />
+	<inherits name="com.google.gwt.activity.Activity" />
+	<inherits name="com.sencha.gxt.chart.Chart"/>
+	<inherits name="com.google.gwt.i18n.I18N" />
+	<inherits name='com.google.gwt.user.theme.standard.Standard' />
+	
+	<define-property name="bootstrap.responsiveDesign"
+		values="true,false" />
+	<set-property name="bootstrap.responsiveDesign" value="false" />
+
+	<replace-with class="fr.sfeir.client.config.DefaultConfigurator">
+		<when-type-is class="fr.sfeir.client.config.Configurator" />
+		<when-property-is name="bootstrap.responsiveDesign"
+			value="false" />
+	</replace-with>
+
+	<replace-with class="fr.sfeir.client.config.ResponsiveConfigurator">
+		<when-type-is class="fr.sfeir.client.config.Configurator" />
+		<when-property-is name="bootstrap.responsiveDesign"
+			value="true" />
+	</replace-with>
+	
+ 
+  <entry-point class='fr.sfeir.client.Cosy' />
+
+  <source path='client' />
+  <source path='shared' />
+
+</module>

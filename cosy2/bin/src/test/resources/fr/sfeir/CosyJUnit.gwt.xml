@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <!-- Inherit our applications main module.                      -->
+  <inherits name='fr.sfeir.Cosy' />
+
+  <!-- Specify the path to any remote services.                   -->
+  <servlet path="/Cosy/greet" class="fr.sfeir.server.GreetingServiceImpl" />
+
+</module>

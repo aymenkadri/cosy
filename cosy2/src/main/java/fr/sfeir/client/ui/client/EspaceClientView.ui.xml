@@ -1,0 +1,52 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:c="urn:import:com.google.gwt.user.cellview.client">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+		
+		.cellTable {
+			border: 1px solid #ccc;
+			text-align: left;
+			margin-bottom: 4px;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<div class="row-fluid">
+			<div class="span11 spaceSpan11">
+				<span class='hEspaceClient'>Espace Client</span>
+				<hr/>
+				<br />
+				<br/>
+				<br/>
+				<div class='bienvenue'>
+					<p>Bonjour et bienvenue dans l'espace client,</p>
+					<br />
+					<p>A partir des pages qui suivent, vous allez pouvoir consulter
+						l'encours de votre contrat et effectuer toutes les opérations en
+						ligne autorisées.</p>
+
+					<p>Plusieurs contrats peuvent avoir été souscrits. Dans ce cas, il
+						vous suffit
+						de cliquer sur celui que vous souhaitez consulter pour y
+						avoir
+						directement accès.</p>
+
+					<br />
+				</div>
+				<span class='hContrat'>Contrat(s) détenu(s)</span>
+				<br/>
+				<br/>
+				<table cellspacing='0' cellpadding='0' style='width:100%;'>
+					<tr>
+						<td valign='top'>
+							<c:CellTable addStyleNames='{style.cellTable}'
+								pageSize='1' ui:field='cellSouscripteur' />
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

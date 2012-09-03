@@ -1,0 +1,181 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:b="urn:import:com.github.gwtbootstrap.client.ui">
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel>
+		<b:FluidRow>
+		<b:PageHeader subtext="Outils">Cosy 2.0</b:PageHeader>
+			<b:Column size="10">
+				<b:Hero>
+					<b:Heading size="2">Evaluation du capital au terme</b:Heading>
+					<b:Paragraph>Ce simulateur a pour objet de vous indiquer le
+						montant
+						du capital que vous aurez au terme de la durée fixée, sur la base
+						de versements et d'un rendement annuel moyen que vous aurez
+						vous-même déterminés.</b:Paragraph>
+				</b:Hero>
+				<b:Form type="HORIZONTAL">
+					<b:Fieldset>
+						<b:Legend>
+							Choix du produit
+						</b:Legend>
+						<b:ControlGroup ui:field="produitControlGroup">
+							<b:ControlLabel for="produit">
+								<font color="red">*</font>
+								Produit
+							</b:ControlLabel>
+							<b:Controls>
+								<b:ListBox b:id="produit">
+									<g:item>Liberalys Vie</g:item>
+								</b:ListBox>
+							</b:Controls>
+						</b:ControlGroup>
+						<b:Legend>
+							Souscripteur
+						</b:Legend>
+						<b:ControlGroup ui:field="userNameControlGroup">
+							<b:ControlLabel for="name">
+								<font color="red">*</font>
+								Nom
+							</b:ControlLabel>
+							<b:Controls>
+								<b:TextBox b:id="name" ui:field="userName"
+									placeholder="texte" />
+								<b:HelpInline ui:field="userNameHelpInline" />
+							</b:Controls>
+						</b:ControlGroup>
+						<b:ControlGroup ui:field="firstNameControlGroup">
+							<b:ControlLabel for="firstName">
+								<font color="red">*</font>
+								Prénom
+							</b:ControlLabel>
+							<b:Controls>
+								<b:TextBox b:id="firstName" ui:field="firstName"
+									placeholder="texte" />
+								<b:HelpInline ui:field="firstNameHelpInline" />
+							</b:Controls>
+						</b:ControlGroup>
+						<b:ControlGroup ui:field="civiliteControlGroup">
+							<b:ControlLabel for="civilite">
+								<font color="red">*</font>
+								Civilité
+							</b:ControlLabel>
+							<b:Controls>
+								<b:ListBox b:id="civilite">
+									<g:item>Monsieur</g:item>
+									<g:item>Madame</g:item>
+								</b:ListBox>
+							</b:Controls>
+						</b:ControlGroup>
+						<b:Legend>
+							Versement initial
+						</b:Legend>
+						<b:ControlGroup ui:field="montantControlGroup">
+							<b:ControlLabel for="montant">
+								<font color="red">*</font>
+								Montant
+							</b:ControlLabel>
+							<b:Controls>
+								<b:InputAddOn prependText="€" appendText=".00">
+									<b:TextBox b:id="montant" ui:field="montant"
+										placeholder="nombre" />
+								</b:InputAddOn>
+							</b:Controls>
+						</b:ControlGroup>
+
+						<b:Legend>
+							Versements programmés
+						</b:Legend>
+						<b:ControlGroup ui:field="periodiciteControlGroup">
+							<b:ControlLabel for="periodicite">
+								<font color="red">*</font>
+								Périodicité
+							</b:ControlLabel>
+							<b:Controls>
+								<b:InputAddOn appendText="%">
+									<b:ListBox b:id="periodicite">
+										<g:item>0.00</g:item>
+										<g:item>0.25</g:item>
+										<g:item>0.50</g:item>
+										<g:item>0.75</g:item>
+										<g:item>1.00</g:item>
+										<g:item>1.25</g:item>
+										<g:item>1.50</g:item>
+										<g:item>1.75</g:item>
+										<g:item>2.00</g:item>
+									</b:ListBox>
+								</b:InputAddOn>
+							</b:Controls>
+						</b:ControlGroup>
+
+						<b:ControlGroup ui:field="montantProgrammeControlGroup">
+							<b:ControlLabel for="montantProgramme">
+								<font color="red">*</font>
+								Montant
+							</b:ControlLabel>
+							<b:Controls>
+								<b:InputAddOn prependText="€" appendText=".00">
+									<b:TextBox b:id="montantProgramme" ui:field="montantPrograme"
+										placeholder="nombre" />
+								</b:InputAddOn>
+							</b:Controls>
+						</b:ControlGroup>
+
+						<b:Legend>
+							Données
+						</b:Legend>
+						<b:ControlGroup ui:field="dureeControlGroup">
+							<b:ControlLabel for="duree">
+								<font color="red">*</font>
+								Durée
+							</b:ControlLabel>
+							<b:Controls>
+								<b:InputAddOn appendText="ans">
+									<b:TextBox b:id="duree" ui:field="duree" placeholder="nombre" />
+								</b:InputAddOn>
+							</b:Controls>
+						</b:ControlGroup>
+						<b:ControlGroup ui:field="tauxDeFraisDEntreeControlGroup">
+							<b:ControlLabel for="tauxDeFraisDEntree">
+								<font color="red">*</font>
+								Taux de frais d'entrée
+							</b:ControlLabel>
+							<b:Controls>
+								<b:ListBox b:id="tauxDeFraisDEntree">
+									<g:item>0.00%</g:item>
+									<g:item>0.25%</g:item>
+									<g:item>0.50%</g:item>
+									<g:item>0.75%</g:item>
+									<g:item>1.00%</g:item>
+									<g:item>1.25%</g:item>
+									<g:item>1.50%</g:item>
+									<g:item>1.75%</g:item>
+									<g:item>2.00%</g:item>
+								</b:ListBox>
+							</b:Controls>
+						</b:ControlGroup>
+						<b:ControlGroup ui:field="tauxDeRendementAnnuelControlGroup">
+							<b:ControlLabel for="tauxDeRendemeentAnnuel">
+								<font color="red">*</font>
+								Taux de rendement net annuel
+							</b:ControlLabel>
+							<b:Controls>
+								<b:InputAddOn appendText="%">
+									<b:TextBox b:id="tauxDeRendementAnnuel" ui:field="tauxDeRendementAnnuel"
+										placeholder="nombre" />
+								</b:InputAddOn>
+							</b:Controls>
+						</b:ControlGroup>
+
+						<b:FormActions>
+							<b:SubmitButton type="PRIMARY" ui:field="saveButton">Calculer</b:SubmitButton>
+						</b:FormActions>
+					</b:Fieldset>
+				</b:Form>
+			</b:Column>
+			<b:Column size="2"></b:Column>
+		</b:FluidRow>
+	</g:HTMLPanel>
+</ui:UiBinder> 

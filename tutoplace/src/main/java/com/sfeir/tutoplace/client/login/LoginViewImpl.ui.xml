@@ -1,0 +1,33 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:b="urn:import:com.github.gwtbootstrap.client.ui">
+	<g:HTMLPanel>
+		<b:PageHeader subtext="Votre logiciel de courtage">Cosy 2.0</b:PageHeader>
+		<b:FluidRow>
+			<b:Column size="4"/>
+			<b:Column size="4">
+				<b:Form type="HORIZONTAL">
+					<b:Fieldset>
+						<b:ControlGroup>
+							<b:ControlLabel>Utilisateur</b:ControlLabel>
+							<b:Controls>
+								<b:TextBox alternateSize="SMALL" placeholder="Email"></b:TextBox>
+							</b:Controls>
+						</b:ControlGroup>
+						<b:ControlGroup>
+							<b:ControlLabel>Mot de passe</b:ControlLabel>
+							<b:Controls>
+								<b:PasswordTextBox alternateSize="SMALL"
+									placeholder="MdP" />
+							</b:Controls>
+						</b:ControlGroup>
+						<b:FormActions>
+							<b:Button ui:field="avancer" type="PRIMARY">Connexion</b:Button>
+						</b:FormActions>
+					</b:Fieldset>
+				</b:Form>
+			</b:Column>
+			<b:Column size="4"/>
+		</b:FluidRow>
+	</g:HTMLPanel>
+</ui:UiBinder> 

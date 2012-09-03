@@ -1,0 +1,14 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:b="urn:import:com.github.gwtbootstrap.client.ui">
+	<g:HTMLPanel>
+		<b:PageHeader subtext="Exemple de graphique">Cosy 2.0</b:PageHeader>
+		<b:FluidRow>
+			<b:Column size="1"/>
+			<b:Column size="10">
+			<g:SimplePanel ui:field="chart"></g:SimplePanel>
+			</b:Column>
+			<b:Column size="1"/>
+		</b:FluidRow>
+	</g:HTMLPanel>
+</ui:UiBinder> 

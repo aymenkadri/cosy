@@ -1,0 +1,20 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:b="urn:import:com.github.gwtbootstrap.client.ui">
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel>
+		<b:FluidRow>
+			<b:Column size="8">
+				<b:Hero>
+					<b:Heading size="2">Cosy 2.0</b:Heading>
+					<b:Paragraph>Une solution pour valoriser votre patrimoine en toute sécurité.</b:Paragraph>
+				</b:Hero>
+			</b:Column>
+			<b:Column size="4">
+			</b:Column>
+		</b:FluidRow>
+				<b:Image url="/images/goldeneggs_small.jpg"></b:Image>
+	</g:HTMLPanel>
+</ui:UiBinder> 

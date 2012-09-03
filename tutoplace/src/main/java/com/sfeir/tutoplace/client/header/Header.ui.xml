@@ -1,0 +1,14 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:b="urn:import:com.github.gwtbootstrap.client.ui">
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel>
+		<b:Navbar height="70px">
+			<b:Brand><img src="/images/goldeneggs_xsmall.png"></img>
+			Cosy 2.0</b:Brand>
+			<b:NavSearch size="10" placeholder="Search" alignment="RIGHT" /> 
+		</b:Navbar>
+	</g:HTMLPanel>
+</ui:UiBinder> 

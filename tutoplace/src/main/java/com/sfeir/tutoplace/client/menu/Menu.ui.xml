@@ -13,11 +13,7 @@
 			<b:NavLink ui:field="demoFormList">Formulaire/Liste</b:NavLink>
 			<b:NavLink ui:field="chart">Graphique</b:NavLink>
 			<b:NavLink ui:field="piechart">Graphique Camembert</b:NavLink>
-			<b:NavHeader>Retour à la souscription</b:NavHeader>
-			<b:NavHeader>Accueil Espace Pro</b:NavHeader>
-			<b:NavHeader>Documentation</b:NavHeader>
-			<b:NavHeader>Liberalys Vie</b:NavHeader>
-			<b:NavHeader>Outils</b:NavHeader>
+			<b:NavHeader>Ecrans métiers</b:NavHeader>
 			<b:NavLink ui:field="encours">Encours</b:NavLink>
 			<b:NavLink ui:field="simulateur">Evaluation du capital au terme</b:NavLink>
 		</b:WellNavList>

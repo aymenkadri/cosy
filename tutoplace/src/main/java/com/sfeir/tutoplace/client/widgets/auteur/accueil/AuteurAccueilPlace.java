@@ -1,4 +1,4 @@
-package com.sfeir.tutoplace.client.auteur.accueil;
+package com.sfeir.tutoplace.client.widgets.auteur.accueil;
 
 import com.google.gwt.place.shared.Place;
 import com.google.gwt.place.shared.PlaceTokenizer;

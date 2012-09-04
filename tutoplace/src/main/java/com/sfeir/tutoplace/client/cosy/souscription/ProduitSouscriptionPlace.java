@@ -1,4 +1,4 @@
-package com.sfeir.tutoplace.client.produit.souscription;
+package com.sfeir.tutoplace.client.cosy.souscription;
 
 import com.google.gwt.place.shared.Place;
 import com.google.gwt.place.shared.PlaceTokenizer;

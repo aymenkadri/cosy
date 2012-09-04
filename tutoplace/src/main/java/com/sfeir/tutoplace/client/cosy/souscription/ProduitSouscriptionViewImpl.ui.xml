@@ -6,7 +6,6 @@
 	</ui:style>
 	<g:HTMLPanel>
 		<b:FluidRow>
-		<b:PageHeader subtext="Outils">Cosy 2.0</b:PageHeader>
 			<b:Column size="10">
 				<b:Hero>
 					<b:Heading size="2">Evaluation du capital au terme</b:Heading>

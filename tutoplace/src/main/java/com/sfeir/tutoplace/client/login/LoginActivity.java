@@ -9,8 +9,8 @@ import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.google.gwt.user.client.ui.IsWidget;
 import com.sfeir.tutoplace.client.Main;
 import com.sfeir.tutoplace.client.accueil.AccueilPlace;
-import com.sfeir.tutoplace.client.auteur.accueil.AuteurAccueilPlace;
-import com.sfeir.tutoplace.client.produit.souscription.ProduitSouscriptionPlace;
+import com.sfeir.tutoplace.client.cosy.souscription.ProduitSouscriptionPlace;
+import com.sfeir.tutoplace.client.widgets.auteur.accueil.AuteurAccueilPlace;
 
 public class LoginActivity extends AbstractActivity {
 	

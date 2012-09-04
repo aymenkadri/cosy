@@ -2,7 +2,11 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
 	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:b="urn:import:com.github.gwtbootstrap.client.ui">
 	<g:HTMLPanel>
-		<b:PageHeader subtext="Exemple de graphique">Cosy 2.0</b:PageHeader>
+		<b:Hero>
+			<b:Heading size="2">
+					Exemple de graphique Camembert
+			</b:Heading>
+		</b:Hero>
 		<b:FluidRow>
 			<b:Column size="1"/>
 			<b:Column size="10">

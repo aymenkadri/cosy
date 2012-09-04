@@ -1,4 +1,4 @@
-package com.sfeir.tutoplace.client.highcharts.charts;
+package com.sfeir.tutoplace.client.widgets.highcharts.charts;
 
 import com.google.gwt.place.shared.Place;
 import com.google.gwt.place.shared.PlaceTokenizer;

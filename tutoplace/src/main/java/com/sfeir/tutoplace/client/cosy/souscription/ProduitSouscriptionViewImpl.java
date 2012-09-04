@@ -1,4 +1,4 @@
-package com.sfeir.tutoplace.client.produit.souscription;
+package com.sfeir.tutoplace.client.cosy.souscription;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.uibinder.client.UiBinder;

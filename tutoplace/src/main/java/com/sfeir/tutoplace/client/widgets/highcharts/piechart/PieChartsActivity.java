@@ -1,4 +1,4 @@
-package com.sfeir.tutoplace.client.highcharts.piechart;
+package com.sfeir.tutoplace.client.widgets.highcharts.piechart;
 
 import com.google.gwt.activity.shared.AbstractActivity;
 import com.google.gwt.event.shared.EventBus;

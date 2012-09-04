@@ -1,4 +1,4 @@
-package com.sfeir.tutoplace.client.highcharts.piechart;
+package com.sfeir.tutoplace.client.widgets.highcharts.piechart;
 
 import org.moxieapps.gwt.highcharts.client.Chart;
 import org.moxieapps.gwt.highcharts.client.Legend;
@@ -19,7 +19,7 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.Widget;
-import com.sfeir.tutoplace.client.highcharts.piechart.PieChartsActivity.PieChartsView;
+import com.sfeir.tutoplace.client.widgets.highcharts.piechart.PieChartsActivity.PieChartsView;
 
 public class PieChartsViewImpl extends Composite implements PieChartsView {
 

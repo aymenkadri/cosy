@@ -1,4 +1,4 @@
-package com.sfeir.tutoplace.client.highcharts.charts;
+package com.sfeir.tutoplace.client.widgets.highcharts.charts;
 
 import org.moxieapps.gwt.highcharts.client.Chart;
 import org.moxieapps.gwt.highcharts.client.ChartSubtitle;
@@ -15,7 +15,7 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.Widget;
-import com.sfeir.tutoplace.client.highcharts.charts.HighChartsActivity.HighChartsView;
+import com.sfeir.tutoplace.client.widgets.highcharts.charts.HighChartsActivity.HighChartsView;
 
 public class HighChartsViewImpl extends Composite implements HighChartsView {
 

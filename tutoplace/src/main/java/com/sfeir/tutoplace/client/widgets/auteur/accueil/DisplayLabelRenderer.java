@@ -13,8 +13,16 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-package com.sfeir.tutoplace.client.auteur.accueil;
+package com.sfeir.tutoplace.client.widgets.auteur.accueil;
 
-public interface HasDisplayLabel {
-	public String getDisplayLabel();
+import com.google.gwt.text.shared.AbstractRenderer;
+
+
+public class DisplayLabelRenderer<T extends HasDisplayLabel> extends AbstractRenderer<T> {
+
+	public String render(T object) {
+		
+		return object != null? object.getDisplayLabel() : "";
+	}
+
 }

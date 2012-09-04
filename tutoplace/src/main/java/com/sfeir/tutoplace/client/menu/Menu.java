@@ -10,11 +10,11 @@ import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Widget;
 import com.sfeir.tutoplace.client.Main;
 import com.sfeir.tutoplace.client.accueil.AccueilPlace;
-import com.sfeir.tutoplace.client.auteur.accueil.AuteurAccueilPlace;
 import com.sfeir.tutoplace.client.cosy.encours.EncoursPlace;
-import com.sfeir.tutoplace.client.highcharts.charts.HighChartsPlace;
-import com.sfeir.tutoplace.client.highcharts.piechart.PieChartsPlace;
-import com.sfeir.tutoplace.client.produit.souscription.ProduitSouscriptionPlace;
+import com.sfeir.tutoplace.client.cosy.souscription.ProduitSouscriptionPlace;
+import com.sfeir.tutoplace.client.widgets.auteur.accueil.AuteurAccueilPlace;
+import com.sfeir.tutoplace.client.widgets.highcharts.charts.HighChartsPlace;
+import com.sfeir.tutoplace.client.widgets.highcharts.piechart.PieChartsPlace;
 
 public class Menu extends Composite {
 

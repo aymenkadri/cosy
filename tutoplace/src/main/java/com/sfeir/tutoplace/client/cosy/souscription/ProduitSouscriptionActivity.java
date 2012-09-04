@@ -1,18 +1,32 @@
-package com.sfeir.tutoplace.client.auteur.accueil;
+package com.sfeir.tutoplace.client.cosy.souscription;
 
 import com.google.gwt.activity.shared.AbstractActivity;
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.google.gwt.user.client.ui.IsWidget;
 
-public class AuteurAccueilActivity extends AbstractActivity {
+public class ProduitSouscriptionActivity extends AbstractActivity {
 	
 	public interface AccueilView extends IsWidget {
+
+		void clear();
+		
 	}
 
-	AuteurAccueilView accueilView = new AuteurAccueilView();
+	AccueilView accueilView = new ProduitSouscriptionViewImpl();
 	
 	public void start(AcceptsOneWidget display, EventBus eventBus) {
 		display.setWidget(accueilView);
 	}
+
+	@Override
+	public void onStop() {
+		
+		accueilView.clear();
+		
+		super.onStop();
+	}
+	
+		
+	
 }

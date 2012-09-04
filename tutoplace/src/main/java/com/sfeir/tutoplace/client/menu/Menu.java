@@ -11,6 +11,7 @@ import com.google.gwt.user.client.ui.Widget;
 import com.sfeir.tutoplace.client.Main;
 import com.sfeir.tutoplace.client.accueil.AccueilPlace;
 import com.sfeir.tutoplace.client.auteur.accueil.AuteurAccueilPlace;
+import com.sfeir.tutoplace.client.cosy.encours.EncoursPlace;
 import com.sfeir.tutoplace.client.highcharts.charts.HighChartsPlace;
 import com.sfeir.tutoplace.client.highcharts.piechart.PieChartsPlace;
 import com.sfeir.tutoplace.client.produit.souscription.ProduitSouscriptionPlace;
@@ -20,7 +21,7 @@ public class Menu extends Composite {
 	private static MenuUiBinder uiBinder = GWT.create(MenuUiBinder.class);
 	
 	@UiField
-	NavLink simulateur, home, demoFormList, chart, piechart;
+	NavLink simulateur, home, demoFormList, chart, piechart, encours;
 
 	interface MenuUiBinder extends UiBinder<Widget, Menu> {
 	}
@@ -49,6 +50,11 @@ public class Menu extends Composite {
 	@UiHandler("piechart")
 	public void clickPieChart(ClickEvent event){
 		Main.getPlaceController().goTo(new PieChartsPlace());
+	}		
+
+	@UiHandler("encours")
+	public void clickEncours(ClickEvent event){
+		Main.getPlaceController().goTo(new EncoursPlace());
 	}		
 
 	

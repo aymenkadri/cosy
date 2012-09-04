@@ -1,0 +1,117 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:b="urn:import:com.github.gwtbootstrap.client.ui">
+	<g:HTMLPanel>
+		<h3>Informations sur le contrat N°4000025 Madame Lou BARON.</h3>
+		<b:FluidRow>
+			<b:Column size="2" />
+			<b:Column size="8">
+				<g:HTMLPanel>
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Souscripteur</th>
+								<th>Madame Lou BARON</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Nom du contrat</td>
+								<td>Frontière Efficiente</td>
+							</tr>
+							<tr>
+								<td>Numéro de contrat</td>
+								<td>4000025</td>
+							</tr>
+							<tr>
+								<td>Date d'effet du contrat</td>
+								<td> 06/10/2006</td>
+							</tr>
+							<tr>
+								<td>Durée</td>
+								<td>Vie entière</td>
+							</tr>
+							<tr>
+								<td>Versement initial (€)</td>
+								<td>530 000,00</td>
+							</tr>
+							<tr>
+								<td>Rachats partiels (€)</td>
+								<td>129 790,11</td>
+							</tr>
+							<tr>
+								<td>Valorisation de l'encours (€)</td>
+								<td>441 648,37</td>
+							</tr>
+						</tbody>
+					</table>
+				</g:HTMLPanel>
+			</b:Column>
+			<b:Column size="2" />
+		</b:FluidRow>
+
+
+		<b:FluidRow>
+			<b:Column size="3" />
+			<b:Column size="6">
+				<g:SimplePanel ui:field="chart"></g:SimplePanel>
+			</b:Column>
+			<b:Column size="3" />
+		</b:FluidRow>
+		<b:FluidRow>
+			<b:Column size="1" />
+			<b:Column size="10">
+				<g:HTMLPanel>
+
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Code ISIN</th>
+								<th>Nom des supports</th>
+								<th>Valorisation (€)</th>
+								<th>%</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Euro</td>
+								<td>APICIL Euro Garanti</td>
+								<td>413 649.96</td>
+								<td>93.66</td>
+							</tr>
+							<tr>
+								<td>FR000002944</td>
+								<td>KBL Richelieu Flexible C</td>
+								<td>8 436.52</td>
+								<td>1.91</td>
+							</tr>
+							<tr>
+								<td>FR0010321802</td>
+								<td>Agressor</td>
+								<td>15 765.29</td>
+								<td>3.57</td>
+							</tr>
+							<tr>
+								<td>FR0010479923</td>
+								<td>EDR China</td>
+								<td>15 765.29</td>
+								<td>0.86</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<th></th>
+								<th>Total</th>
+								<th>441 648.37</th>
+								<th>100.00</th>
+							</tr>
+						</tfoot>
+					</table>
+				</g:HTMLPanel>
+			</b:Column>
+			<b:Column size="1" />
+		</b:FluidRow>
+
+
+	</g:HTMLPanel>
+</ui:UiBinder> 

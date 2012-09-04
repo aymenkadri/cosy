@@ -18,6 +18,7 @@
 			<b:NavHeader>Documentation</b:NavHeader>
 			<b:NavHeader>Liberalys Vie</b:NavHeader>
 			<b:NavHeader>Outils</b:NavHeader>
+			<b:NavLink ui:field="encours">Encours</b:NavLink>
 			<b:NavLink ui:field="simulateur">Evaluation du capital au terme</b:NavLink>
 		</b:WellNavList>
 	</g:HTMLPanel>

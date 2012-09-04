@@ -1,4 +1,4 @@
-package com.sfeir.tutoplace.client.highcharts.piechart;
+package com.sfeir.tutoplace.client.cosy.encours;
 
 import org.moxieapps.gwt.highcharts.client.Chart;
 import org.moxieapps.gwt.highcharts.client.Legend;
@@ -19,29 +19,29 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.Widget;
-import com.sfeir.tutoplace.client.highcharts.piechart.PieChartsActivity.PieChartsView;
+import com.sfeir.tutoplace.client.cosy.encours.EncoursActivity.EncoursView;
 
-public class PieChartsViewImpl extends Composite implements PieChartsView {
+public class EncoursViewImpl extends Composite implements EncoursView {
 
 	private static HighChartsViewImplUiBinder uiBinder = GWT
 			.create(HighChartsViewImplUiBinder.class);
 
 	@UiField
 	SimplePanel chart;
-	
-	interface HighChartsViewImplUiBinder extends UiBinder<Widget, PieChartsViewImpl> {
+
+	interface HighChartsViewImplUiBinder extends UiBinder<Widget, EncoursViewImpl> {
 	}
 
-	public PieChartsViewImpl() {
+	public EncoursViewImpl() {
 		initWidget(uiBinder.createAndBindUi(this));
 		chart.add(createChart());
 	}
 	
-	private Chart createChart() {  
+	public Chart createChart() {  
 		  
         final Chart chart = new Chart()  
             .setType(Series.Type.PIE)  
-            .setChartTitleText("Pourcentage des différents placements pour un portefeuille donné, 2010")  
+            .setChartTitleText("Répartition de l'encours")  
             .setPlotBackgroundColor((String) null)  
             .setPlotBorderWidth(null)  
             .setPlotShadow(false)  
@@ -83,22 +83,17 @@ public class PieChartsViewImpl extends Composite implements PieChartsView {
         chart.addSeries(chart.createSeries()  
             .setName("Browser share")  
             .setPoints(new Point[]{  
-                new Point("Placement 1", 45.0),  
-                new Point("Placement 2", 26.8),  
-                new Point("Placement 3", 12.8)  
+                new Point("Fonds Euro", 93.66),  
+                new Point("Action Française - Général", 3.57),  
+                new Point("Diversifiés International - Gestion Flexible", 1.91)  
                     .setSliced(true)  
                     .setSelected(true),  
-                new Point("Placement 4", 8.5),  
-                new Point("Placement 5", 6.2),  
-                new Point("Others", 0.7)  
+                new Point("Actions Asiatique - Zones Particulières", 0.86),  
             })  
         );  
   
         return chart;  
     }  
-	
-	
-	
-	
+
 
 }
